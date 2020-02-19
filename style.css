@@ -102,4 +102,11 @@ border-left: 6px solid rgb(255, 255, 255, 0.5);
     #aside, #timeline {
       width: 100%;
     }
+    #container{
+        margin: 0 20px 0 20px;
+    }
+    .content{
+        width: 80%;
+    }
+    
   }
