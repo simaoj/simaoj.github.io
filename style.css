@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap');
+
+body{
+    padding: 0;
+    margin:0;
+    background: #34495E;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+}
+#top{
+    width: 100%;
+    height: 40px;
+    background: #2C3E50;
+    text-align: center;
+    font-size: 16pt;
+    padding-top: 15px;
+}
+#top > a{
+    text-decoration: none;
+    color: white;
+}
+
+.active{
+    font-weight: bold;
+}
+
+#container{
+    margin: 0 50px 0 50px;
+}
+
+#aside{
+    width: 30%;
+    float:left;
+    padding: 70px 30px 0 0;
+}
+#aside > h1{
+    line-height: 0%;
+}
+
+#avatar{
+    height: 180px;
+    width: 180px;
+    background-image: url('profile.png');
+    border-radius: 50% 50%;
+    background-size: cover;
+}
+
+#icons > a{
+    color:white;
+    font-size: 20px;
+    margin-right: 10px;
+}
+#icons{
+    margin-bottom: 50px;
+}
+#timeline {
+float: left;
+width: 60%;
+margin-top: 70px;
+border-left: 6px solid rgb(255, 255, 255, 0.5);
+  }
+  
+
+  
+.content {
+    padding: 0 40px;
+    position: relative;
+    background-color: inherit;
+  }
+
+  .content::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: -17px;
+    background-color: white;
+    border: 6px solid #34495E;
+    top: 0px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#call-to-action{
+    width: 150px;
+    padding:10px;
+    background: rgb(255, 255, 255, 0.2);
+    margin:100px 0 50px 50px;
+    display: block;
+    text-align: center;
+    border: 1pt solid #FFF;
+    border-radius: 100px;
+    text-decoration: none;
+    color:#FFF;
+
+}
+#call-to-action:hover{
+    background: rgb(255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width: 768px) {
+    #aside, #timeline {
+      width: 100%;
+    }
+  }
