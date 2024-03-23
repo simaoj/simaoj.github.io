@@ -1,6 +1,0 @@
-en:
-  formats:
-    default: "%Y/%m/%d"
-pt:
-  formats:
-    default: "%d/%m/%Y"
