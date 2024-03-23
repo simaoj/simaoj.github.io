@@ -1,0 +1,113 @@
+---
+layout: default
+permalink: /resume/
+---
+<div class='parent'>
+    <div class="magicpattern2"></div>
+</div>
+<div class="container page">
+    <h2>{% t resume.title %}</h2>
+
+    <ul class="nav nav-tabs justify-content-center mt-70 mb-70" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="education-tab" data-toggle="tab" data-target="#education" type="button"
+                role="tab" aria-controls="education" aria-selected="true">{% t resume.education %}</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="experience-tab" data-toggle="tab" data-target="#experience" type="button"
+                role="tab" aria-controls="experience" aria-selected="false">{% t resume.experience %}</button>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade active show" id="education" role="tabpanel" aria-labelledby="education-tab">
+            <div class="row d-flex mt-70 mb-70">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-sm-12">
+                            <div class="vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                                {% for education in site.data.resume.education %}
+                                <div class="vertical-timeline-item vertical-timeline-element">
+                                    <span class="vertical-timeline-element-icon">
+                                        <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
+                                    </span>
+                                    <div class="vertical-timeline-element-content">
+                                        <span class="vertical-timeline-element-date">[{{ education.period }}]</span>
+                                        <h4 class="timeline-title">{{ education.title[site.lang] }}</h4>
+                                        <p>{{ education.institution }}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+            <div class="d-flex justify-content-end">
+                <button id="clear-filter" class="btn btn-sm btn-primary" style="display: none;">{% t clear-filter %}</button>
+            </div>            <div class="row d-flex mt-70 mb-70">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-sm-12">
+                            <div class="vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                                {% for experience in site.data.resume.experience %}
+                                <div class="vertical-timeline-item vertical-timeline-element experience"
+                                    data-techs="{{experience.technology | join: ';'}}">
+                                    <span class="vertical-timeline-element-icon">
+                                        <i class="badge badge-dot badge-dot-xl badge-warning"> </i>
+                                    </span>
+                                    <div class="vertical-timeline-element-content">
+                                        <span class="vertical-timeline-element-date">[{{ experience.period }}]</span>
+                                        <h4 class="timeline-title">{{ experience.title[site.lang] }}</h4>
+                                        <p>{{ experience.company }}</p>
+                                        <p>{{ experience.description[site.lang] }}</p>
+                                        <p>
+                                            {% for tech in experience.technology %}
+                                            <a class="badge badge-orange text-light" data-tech="{{tech}}">{{tech}}</a>
+                                            {% endfor %}
+                                        </p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var badges = document.querySelectorAll('a.badge');
+    var experiences = document.querySelectorAll('.experience');
+
+    badges.forEach(function (badge) {
+        badge.addEventListener('click', function () {
+            var tech = this.getAttribute('data-tech');
+
+            experiences.forEach(function (experience) {
+                var techs = experience.getAttribute('data-techs').split(';');
+
+                if (techs.includes(tech)) {
+                    experience.style.display = 'block';
+                } else {
+                    experience.style.display = 'none';
+                }
+
+                document.querySelector('#clear-filter').style.display = 'block';
+
+            });
+        });
+    });
+
+    var clearFilterButton = document.getElementById('clear-filter');
+
+    clearFilterButton.addEventListener('click', function () {
+        experiences.forEach(function (experience) {
+            experience.style.display = 'block';
+        });
+        document.querySelector('#clear-filter').style.display = 'none';
+    });
+</script>

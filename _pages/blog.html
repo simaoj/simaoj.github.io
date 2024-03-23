@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<div class='parent'>
+    <div class="magicpattern"></div>
+</div>
+<div class="container page">
+    <div class="col-12 mb-4">
+        <h2>Blog</h2>
+    </div>
+    <div class="mt-5">
+        {% for post in site.posts %}
+        <div class="row mt-5">
+            <div class="col-3">
+                <img src="{{ post.image }}" alt="{{post.title}}" class="img-fluid">
+            </div>
+            <div class="col-9">
+                <h4 class="mt-0"><a href="{{ post.url }}">{{ post.title}}</a></h4>
+                <small><i class="far fa-clock"></i> {{ post.date | date: site.data.date[site.lang].formats.default}}</small>
+                <small><i class="fa-regular fa-user"></i> {{ post.author }}</small>
+                <p>{{ post.excerpt }}</p>
+                <a href="{{ post.url }}">{% t blog.read-more %}</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
