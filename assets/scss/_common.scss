@@ -22,10 +22,15 @@ img {
   width: 100%;
 }
 
-.container.page{
+.container.page {
   margin-top: 30px;
   margin-bottom: 200px;
 }
+
+.section.grey {
+  background-color: $grey-color !important;
+}
+
 /* preloader */
 
 .preloader {
@@ -196,9 +201,7 @@ textarea.form-control {
   box-shadow: none;
 }
 
-.section.grey {
-  background-color: $grey-color;
-}
+
 
 .circle {
   -webkit-animation: morph 3s linear infinite;
@@ -216,7 +219,11 @@ textarea.form-control {
 }
 
 .quote {
-  padding-top: 50px;
+  margin-top: 50px;
+
+  @include mobile {
+    margin-top: 0;
+  }
 }
 
 .quote p {
@@ -507,17 +514,18 @@ textarea.form-control {
   }
 }
 
-.projects{
-  .card-text{
+.projects {
+  .card-text {
     font-size: 11pt;
     line-height: 1.2;
   }
-  .card-footer a{
+
+  .card-footer a {
     font-size: 16pt;
   }
 }
 
-.badge-orange{
+.badge-orange {
   background-color: $primary-color;
   color: #FFF;
 }

@@ -22,14 +22,14 @@ layout: default
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 col-sm-12">
+      <div class="col-lg-4 col-sm-12 p-0 m-0">
         <div class="circle mx-auto d-block">
           <img src="{{ site.data.homepage.quote.profile | prepend: site.baseurl_root }}">
         </div>
       </div>
-      <div class="col-lg-8 col-sm-12 text-center">
+      <div class="col-lg-8 col-sm-12 text-center pb-5 pt-3">
         <div class="quote">
-          <p class="mb-6">{% t homepage.quote %}</p>
+          <p>{% t homepage.quote %}</p>
           <br>
           <a href="{{ site.data.homepage.quote.link | prepend: site.baseurl_root }}" class="btn">{% t homepage.about %}</a>
         </div>
@@ -42,28 +42,3 @@ layout: default
 <!-- blog -->
 {% include section-posts.html %}
 <!-- /blog -->
-
-<!-- call_to_action -->
-{% if site.data.homepage.call_to_action.enable %}
-<section class="section pt-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 mx-auto">
-        <div class="row shadow bg-white p-5">
-          <div class="col-md-4 text-center text-md-left mb-4 mb-lg-0">
-            <img src="{{ site.data.homepage.call_to_action.image | prepend: site.baseurl_root }}" class="mr-4 img-fluid rounded" alt=""></div>
-          <div class="col-md-8 text-center text-md-left">
-            <h3 class="mt-0">{{ site.data.homepage.call_to_action.title }}</h3>
-            <p>{{ site.data.homepage.call_to_action.description }}</p>
-            {% if site.data.homepage.call_to_action.button.enable %}
-            <a href="{{ site.data.homepage.call_to_action.button.link | prepend: site.baseurl_root }}"
-              class="btn btn-primary">{{ site.data.homepage.call_to_action.button.label }}</a>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-{% endif %}
-<!-- /call_to_action -->
