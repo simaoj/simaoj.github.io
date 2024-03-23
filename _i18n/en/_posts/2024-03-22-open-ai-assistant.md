@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Crie an assistant based on Generative AI with OpenAI Assistants"
+title:  "Crie an assistant based on Generative AI"
 image : "/assets/images/post/open-ai-assistant.jpeg"
 author: "José Pedro Schardosim Simão"
 date: 2023-03-22 +0300

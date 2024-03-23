@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Crie um assistente baseado em IA Generativa com o OpenAI Assistants"
+title:  "Crie um assistente baseado em IA Generativa"
 image : "/assets/images/post/open-ai-assistant.jpeg"
 author: "José Pedro Schardosim Simão"
 date: 2023-03-22 +0300
