@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <title>Simão.</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="José Pedro Schardosim Simão - Software Engineer">
+
+  <!-- theme meta -->
+  <meta name="theme-name" content="northendlab-jekyll" />
+
+  
+
+  
+  <link rel="stylesheet" href="/assets/plugins/bootstrap/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="/assets/plugins/bootstrap/bootstrap-table.min.css">
+  
+  <link rel="stylesheet" href="/assets/plugins/themify-icons/themify-icons.css">
+  
+  <script src="https://kit.fontawesome.com/9d8d1472a7.js" crossorigin="anonymous"></script>
+  
+  <!-- Main Stylesheet -->
+  <link href="/assets/scss/style.css" rel="stylesheet">
+
+  <!-- JS Plugins -->
+  
+  <script src="/assets/plugins/jQuery/jquery.min.js"></script>
+  
+  <script src="/assets/plugins/bootstrap/bootstrap.min.js"></script>
+  
+  <script src="/assets/plugins/bootstrap/bootstrap.bundle.min.js"></script>
+  
+  <script src="/assets/plugins/bootstrap/bootstrap-table.min.js"></script>
+  
+  <script src="/assets/plugins/search/lunr.min.js"></script>
+  
+  <script src="/assets/plugins/search/search.js"></script>
+  
+
+  <!-- Main Script -->
+  <script src="/assets/js/script.js"></script>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="/assets/images/favicon.png " type="image/x-icon">
+  <link rel="icon" href="/assets/images/favicon.png " type="image/x-icon">
+
+  <!-- google-analytics -->
+  
+
+</head>
+
+<body>
+	
+	<!-- navigation -->
+<header class="fixed-top navigation">
+  <div class="container">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <a class="navbar-brand" href="/"> Simão. </a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
+        <i class="ti-menu h3"></i>
+      </button>
+
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          
+            
+
+            <li class="nav-item">
+              
+                <a class="nav-link" href="/en//">Home</a>
+              
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              
+                <a class="nav-link" href="/en//about">About</a>
+              
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              
+                <a class="nav-link" href="/en//resume">Resumé</a>
+              
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              
+                <a class="nav-link" href="/en//projects">Projects</a>
+              
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              
+                <a class="nav-link" href="/en//publications">Publications</a>
+              
+            </li>
+            
+          
+            
+
+            <li class="nav-item">
+              
+                <a class="nav-link" href="/en//blog">Blog</a>
+              
+            </li>
+            
+          
+        </ul>
+        
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- /navigation -->
+	<main>
+		<div class="py-5 d-none d-lg-block"></div>
+		<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h2>Search result for
+          <span class="text-primary">
+            <script>
+              var str=(window.location.search).substr(7);var result=str.replace("+"," ");document.write(result);</script>
+          </span>
+        </h2>
+        <div class="block shadow">
+          <ul class="list-unstyled" id="search-results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  window.store = {
+    
+      "2023-03-22-open-ai-assistant": {
+        "title": "Crie an assistant based on Generative AI",
+        "author": "José Pedro Schardosim Simão",
+        "tags": "technology ",
+        "content": "Like much of the population, you are likely a frequent user of Generative AI tools, such as ChatGPT. But have you ever thought about having your own assistant based on this technology?With OpenAI Assistants, you can create personalized assistants that act according to your instructions, search for answers in documents you can provide, and can even be integrated into other applications and APIs.This feature is paid, but OpenAI offers 5 dollars in credits for creating a new account, which is more than enough to test.In this article, we will create together an assistant that answers questions about the National Common Core Curriculum. Let’s go!1 - Create an account on the OpenAI website. You can authenticate with your Google, Microsoft, or Apple account.2 - In the menu on the left side, open “Assistants” and click on “Create”.3 - Fill in the name of the assistant and its instruction. Here we will use “You should clear up doubts about the national common core curriculum and offer activity proposals based on the year, curricular component, and competence.”4 - Mark as active the options “Code interpreter” and “Retrieval”.5 - Download the BNCC PDF from this website and upload it in the “Files” section.6 - Click on “Test”7 - In the message field, write a question about the BNCC, for example, “What are the specific Language competencies for Elementary School?” and click on “Run”8 - Done! The assistant can now help you extract information from the BNCC.The next step is to use the OpenAI API to utilize this assistant from any web application. But that’s a topic for another post.See you later,Zé",
+        "url": "/2023/03/22/open-ai-assistant/",
+        "date": "Mar 22, 2023"
+      }
+      ,
+    
+      "2023-03-15-5-authoring-tools": {
+        "title": "5 Free Authoring Tools for You to Create Multimedia Content",
+        "author": "José Pedro Schardosim Simão",
+        "tags": "education ",
+        "content": "Using multimedia content in your classes can enrich the learning experience, making it more interactive and interesting. Here are 5 free authoring tools that you can use to create various types of content for your classes:GeniallyGenially is a platform that enables the creation of interactive presentations, infographics, dossiers, quizzes, and other dynamic contents. It has templates that make creating attractive and interactive materials easier.CanvaCanva is an image and video editing tool that offers a wide range of templates and designs to create visual presentations, infographics, educational posters, and other graphic materials. It has a free version and the premium version is available for free to primary education teachers.PadletPadlet is a versatile platform that allows creating digital murals. Teachers and students can add texts, images, links, videos, and documents, facilitating collaboration and sharing of resources.LoomLoom is a screen and video recording tool that makes creating tutorials and presentations easier, allowing you to record your screen while overlaying the webcam image. It’s available for PC, Mac, or as a Google Chrome extension.PowtoonPowtoon allows for easy creation of animated videos, featuring a library of templates for different formats.Were you already familiar with these tools?See you later,Zé",
+        "url": "/2023/03/15/5-authoring-tools/",
+        "date": "Mar 15, 2023"
+      }
+      ,
+    
+      "2023-03-10-hello-world": {
+        "title": "Hello World!",
+        "author": "José Pedro Schardosim Simão",
+        "tags": "General ",
+        "content": "It is with great enthusiasm that I inaugurate this space. My name is José Pedro, a passionate software engineer and tireless researcher, always in search of new horizons in the field of technology. In this blog, I will share my discoveries, projects, and, of course, a bit of code.My JourneyI started to become interested in technology in high school, thanks to the school labs I attended that used Linux, and soon I was dabbling in programming. I decided to pursue a degree in the field of technology, and soon I was researching the development of educational technologies. I then proceeded to a master’s degree and after some time teaching and working in the industry, I recently started a PhD in Informatics in Education, an area where I serve as a Tech Lead at an EdTech.What to expect from this blog?This site will serve as a platform not only to share my work and projects but also insights, tutorials, and discussions on the latest trends and challenges in technology. Here, you will find:  Posts: Reflections on my journey, lessons learned, and the challenges I faced.  Tutorials and Guides: From quick tips to in-depth guides on programming, frameworks, tools, and much more.  Research: I will share insights about my research on educational technology.An InvitationI consider this first post not just an introduction, but an invitation. An invitation for you to join me on this journey of discovery, learning, and creation. There’s a universe of possibilities out there, and I can’t wait to explore it with you.So, if you’re ready to embark on this adventure with me, feel free to explore, read, learn, and interact. Let’s together unravel the mysteries of technology and create something truly incredible.See you later,Zé",
+        "url": "/2023/03/10/hello-world/",
+        "date": "Mar 10, 2023"
+      }
+      
+    
+  };
+</script>
+	</main>
+	<!-- footer -->
+<footer class="py-4 bg-light border-top">
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-lg-4 text-center mb-4 mb-lg-0">
+        <div class="dropup-center dropup">
+          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            English
+          </button>
+          <ul class="dropdown-menu">
+            
+               
+              
+                
+                  
+                    <a class="dropdown-item" href="/:basename:output_ext">Português</a>
+                  
+                
+            
+          </ul>
+        </div>        
+      </div>
+      <div class="col-lg-4 text-lg-right text-center mb-4 mb-lg-0">
+        <ul class="list-inline social-icon mb-0">
+          
+          <li class="list-inline-item"><a href="https://github.com/simaoj"><i class="ti-github"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/jpsimao/ "><i class="ti-linkedin"></i></a></li>
+          
+          <li class="list-inline-item"><a href="https://www.instagram.com/simaoj_/"><i class="ti-instagram"></i></a></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
+</body>
+
+</html>

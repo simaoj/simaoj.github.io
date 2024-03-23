@@ -1,9 +1,0 @@
-####################### banner #######################################
-banner:
-  enable: true
-  image: "/assets/images/illustration/dev.svg"
-  bg_image: "/assets/images/banner/banner-bg.svg"
-quote: 
-  profile: "/assets/images/profile.jpg"
-  link: "/about"
-
