@@ -12,7 +12,7 @@ permalink: /projects/
     <button id="clear-filter" class="btn btn-sm btn-primary float-end" style="display: none;">{% t clear-filter %}</button>
     <div class="row projects mb-6">
         {% for project in site.data.projects %}
-        <div class="col-4 project" data-techs="{{project.technologies | join: ';'}}">
+        <div class="col-lg-4 col-sm-12 project" data-techs="{{project.technologies | join: ';'}}">
             <div class="card bg-light mt-4">
                 <div class="card-body">
                     <h5 class="card-title">{{project.title}}</h5>

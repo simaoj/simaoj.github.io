@@ -7,20 +7,22 @@ permalink: /publications/
 </div>
 <div class="container page">
     <h2>{% t header.publications %}</h2>
-    <ul class="nav nav-tabs justify-content-center mt-5 mb-5" id="myTab" role="tablist">
-        <li class="nav-item" role="presentation">
-            <button class="nav-link active" id="papers-tab" data-toggle="tab" data-target="#papers" type="button"
-                role="tab" aria-controls="papers" aria-selected="true">{% t publications.papers %}</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="conference-tab" data-toggle="tab" data-target="#conference" type="button"
-                role="tab" aria-controls="conference" aria-selected="false">{% t publications.conference %}</button>
-        </li>
-        <li class="nav-item" role="presentation">
-            <button class="nav-link" id="chapter-tab" data-toggle="tab" data-target="#chapter" type="button"
-                role="tab" aria-controls="chapter" aria-selected="false">{% t publications.chapters %}</button>
-        </li>
-    </ul>
+    <div style="overflow-x: auto; width: 100%;">
+        <ul class="nav nav-tabs justify-content-center mt-5 mb-5" id="myTab" role="tablist" style="min-width: 570px;">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="papers-tab" data-toggle="tab" data-target="#papers" type="button"
+                    role="tab" aria-controls="papers" aria-selected="true">{% t publications.papers %}</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="conference-tab" data-toggle="tab" data-target="#conference" type="button"
+                    role="tab" aria-controls="conference" aria-selected="false">{% t publications.conference %}</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="chapter-tab" data-toggle="tab" data-target="#chapter" type="button"
+                    role="tab" aria-controls="chapter" aria-selected="false">{% t publications.chapters %}</button>
+            </li>
+        </ul>
+    </div>
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade active show" id="papers" role="tabpanel" aria-labelledby="papers-tab">
             <table class="table" data-toggle="table" data-pagination="true" data-search="true">

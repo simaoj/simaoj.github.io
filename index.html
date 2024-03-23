@@ -10,10 +10,7 @@ layout: default
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mb-5 mb-lg-0">
-        <h1>{% t homepage.title %}</h1>
-      </div>
-      <div class="col-lg-6 illustration-mobile">
-        <img src="{{ site.data.homepage.banner.image | prepend: site.baseurl_root }}" class="img-fluid" alt="">
+        <h1 class="homepage-title">{% t homepage.title %}</h1>
       </div>
     </div>
   </div>
@@ -25,12 +22,12 @@ layout: default
 <section>
   <div class="container">
     <div class="row">
-      <div class="col-lg-4 p-4">
-        <div class="circle">
-          <img src="{{ site.data.homepage.quote.profile | prepend: site.baseurl_root }}" alt="">
+      <div class="col-lg-4 col-sm-12">
+        <div class="circle mx-auto d-block">
+          <img src="{{ site.data.homepage.quote.profile | prepend: site.baseurl_root }}">
         </div>
       </div>
-      <div class="col-lg-8 p-4 text-center">
+      <div class="col-lg-8 col-sm-12 text-center">
         <div class="quote">
           <p class="mb-6">{% t homepage.quote %}</p>
           <br>

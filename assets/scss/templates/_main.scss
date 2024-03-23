@@ -19,12 +19,21 @@
     bottom: 0;
     right: 30px;
     max-width: 600px;
+    @include mobile{
+      display: none;
+    }
   }
   .illustration-mobile{
     display: none;
     @include desktop {
       display: block;
     }
+  }
+}
+
+.homepage-title{
+  @include mobile{
+    font-size: 18pt;
   }
 }
 
