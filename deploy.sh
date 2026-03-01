@@ -6,7 +6,7 @@
 set -e
 
 echo "🔨 Building the site..."
-npm run build
+npx next build
 
 echo "📦 Preparing deployment files..."
 
