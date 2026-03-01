@@ -29,8 +29,36 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on GitHub Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To deploy this site to GitHub Pages, use the provided deploy script:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run deploy
+```
+
+This script will:
+1. Build the Next.js site (`npm run build`)
+2. Generate static files
+3. Create or update the `gh-pages` branch
+4. Push the built files to the `gh-pages` branch
+5. Return to your current branch
+
+The site will be published at: `https://simaoj.github.io`
+
+### Prerequisites
+
+Before deploying, make sure:
+- You have git configured with your credentials
+- Your GitHub repository has GitHub Pages enabled for the `gh-pages` branch
+- Your repository is configured at `/Users/schardosim/code/simaoj.github.io`
+
+### Manual Alternative
+
+If you prefer to manage the deployment manually:
+
+```bash
+npm run build       # Build the site
+# Manually push the .next/static and public directories to gh-pages branch
+git push origin gh-pages
+```
