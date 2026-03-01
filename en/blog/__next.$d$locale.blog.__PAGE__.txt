@@ -1,0 +1,137 @@
+1:"$Sreact.fragment"
+2:I[42733,["/_next/static/chunks/5bd81a671a527354.js","/_next/static/chunks/189f197bd22b9296.js","/_next/static/chunks/9d5537234acab16b.js"],"default"]
+9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+3:Ta4b,
+Software development has changed. What used to require days of boilerplate configuration and manual adjustments can now be condensed into a few hours of creative flow. Recently, I decided to rebuild my personal website from scratch and the result was surprising: one morning of work was enough.
+
+## The Plan
+Before opening the code editor, I had well-defined goals for this migration:
+
+- **Stack Change:** Migrate from a Flask backend (Python) to the modernity of Next.js (React), seeking a more fluid experience and better performance.
+
+- **New Layout:** Abandon the old design for a cleaner, more professional, and fully responsive interface.
+
+- **Data Portability:** Bring my publications from Currículo Lattes to the new site in a structured way, without having to retype everything.
+
+## The Workflow
+- **UI Design with Google Stitch:** I used it to visually prototype components and ensure aesthetic consistency before writing the first <div>.
+
+- **Gemini for Data Conversion:** Currículo Lattes exports a dense and difficult-to-manipulate XML. I used Gemini to convert this export to clean JSON, mapping publications and academic background in seconds.
+
+- **Copilot in VS Code:** With data and design defined, Copilot accelerated writing React components and Tailwind styling, keeping me in a flow state.
+
+## Lessons Learned
+Working with AI on a real project brings learnings that go beyond basic "prompt engineering". Here are the main conclusions from this morning:
+
+1. **The Right Tool for the Right Task:** Don't try to do everything with a single AI. Copilot is unbeatable for code context and autocomplete, while Gemini shined in the task of structural reasoning and complex data transformation (XML to JSON). The secret is knowing which "specialist" to call for each step.
+
+2. **Divide and Conquer:** A common mistake is asking for multiple things at once ("Create this component, convert this data, and adjust the CSS"). AI works best with atomic instructions. If you separate data conversion from interface logic, the accuracy rate is almost 100%.
+
+3. **The Human as Curator:** AI generates the code, but you define the architecture. The decision to move from Flask to Next.js and how to structure the components is still the developer's role. AI removes manual friction, but the technical direction remains yours.
+
+## Conclusion
+Rebuilding a website in a few hours isn't about "shortcuts", but about leverage. By delegating raw data conversion and repetitive code writing, I could focus on what really matters: the architecture of my digital presence.
+
+The barrier between idea and execution has never been smaller.
+4:T72c,
+You, like much of the population, must be an avid user of Generative AI tools, such as [ChatGPT](https://chat.openai.com/). But have you ever thought about having your own assistant based on this technology?
+
+With OpenAI Assistants you can create personalized assistants that act according to your instructions, search for answers in documents you can provide, and can even be integrated with other applications and APIs.
+
+This feature is paid, but OpenAI offers $5 in credits for those who create a new account, which is more than enough for testing.
+
+In this article we will create together an assistant that answers questions about Brazil's National Common Curricular Base (BNCC). Let's go!
+
+1 - Create an account on the [OpenAI](https://platform.openai.com/signup) website. You can authenticate with your Google, Microsoft or Apple account.
+
+2 - In the menu on the left sidebar, open "Assistants" and click "Create".
+
+3 - Fill in the assistant's name and instructions. Here we'll use "You should answer questions about the national common curricular base and offer activity proposals based on year, curricular component and competency."
+
+4 - Mark as active the options "Code interpreter" and "Retrieval".
+
+5 - Download the BNCC PDF from [this site](http://download.basenacionalcomum.mec.gov.br/) and upload it in the "Files" section.
+
+![OpenAI Image](/images/blog/assistants-1.png)
+
+6 - Click "Test"
+
+7 - In the message field, write a question about the BNCC, for example "What are the specific competencies of Languages for Elementary School?" and click "Run"
+
+![OpenAI Image](/images/blog/assistants-2.png)
+
+8 - Done! The assistant can now help you extract information from the BNCC.
+
+The next step is to use the OpenAI API to use this assistant from any web application. But that's a topic for another post.
+
+See you soon,
+
+Zé
+5:T6c4,
+Using multimedia content in your classes can enrich the learning experience, making it more interactive and engaging. Here are 5 free authoring tools that you can use to create various types of content for your classes:
+
+### Genially
+
+[Genially](https://genial.ly/) is a platform that allows the creation of interactive presentations, infographics, portfolios, quizzes, and other dynamic content. It has templates that facilitate the creation of attractive and interactive materials.
+
+![Genially Image](/images/blog/genially.gif)
+
+### Canva
+
+[Canva](https://www.canva.com/) is an image and video editing tool that offers a wide range of templates and designs to create visual presentations, infographics, educational posters, and other graphic materials. It has a free version and the premium version is [available for free to K-12 teachers](https://www.canva.com/education/).
+
+![Canva Image](/images/blog/canva.gif)
+
+### Paddlet
+
+[Padlet](https://padlet.com/) is a versatile platform that allows you to create digital boards. Teachers and students can add texts, images, links, videos, and documents, facilitating collaboration and resource sharing.
+
+![Padlet Image](/images/blog/padlet.gif)
+
+### Loom
+
+[Loom](https://www.loom.com/) is a screen recording and video tool that makes it easy to create tutorials and presentations, allowing you to record your screen with a webcam overlay. It's available for PC, Mac or as a Google Chrome extension.
+
+![Loom Image](/images/blog/loom.gif)
+
+### Powtoon
+
+[Powtoon](https://www.powtoon.com/) allows you to easily create animated videos, with a library of templates for different formats.
+
+![Powtoon Image](/images/blog/powtoon.gif)
+
+
+Did you already know these tools?
+
+See you soon,
+
+Zé
+6:T6f1,
+It is with great enthusiasm that I launch this space. My name is José Pedro, a passionate software engineer and tireless researcher, always seeking new horizons in the field of technology. On this blog I will share my discoveries, projects and, of course, some code.
+
+**My Journey**
+
+I became interested in technology in high school thanks to the school labs that used Linux, and soon I was already playing at being a programmer. I decided to pursue a degree in technology, and from the beginning I researched the development of educational technologies. After graduation I completed a master's degree and after some time teaching and working in industry, I recently started a PhD in Informatics in Education, an area where I work as a Tech Lead in an EdTech company.
+
+**What to expect from this blog?**
+
+This site will serve as a platform to share not only my work and projects, but also insights, tutorials and discussions about the latest trends and challenges in technology. Here, you will find:
+
+- **Posts:** Reflections on my journey, lessons learned and the challenges I've faced.
+- **Tutorials and Guides:** From quick tips to in-depth guides on programming, frameworks, tools and much more.
+- **Research:** I'll share insights about my research in the area of educational technology.
+
+**An Invitation**
+
+I consider this first post not just an introduction, but an invitation. An invitation for you to join me on this journey of discovery, learning and creation. There's a universe of possibilities out there, and I can't wait to explore it with you.
+
+So, if you're ready to embark on this adventure with me, feel free to explore, read, learn and interact. Let's together unravel the mysteries of technology and create something truly incredible.
+
+See you soon,
+
+Zé
+0:{"buildId":"78lOrudov32-BR0Ema0ga","rsc":["$","$1","c",{"children":[["$","$L2",null,{"articles":[{"slug":"2026-03-01-desenvolvimento-com-ia","meta":{"title":"How I rebuilt my personal website in one morning using AI","date":"2026-03-01","readTime":"6 min","tag":"Artificial Intelligence","coverImage":"/images/blog/stitch.png","description":"Why and how to use AI in software development so that AI doesn't use you.","author":"José Pedro Schardosim Simão","language":"en"},"content":"$3"},{"slug":"2024-03-22-open-ai-assistant","meta":{"title":"Create an assistant based on Generative AI","date":"2024-03-22","readTime":"6 min","tag":"Artificial Intelligence","coverImage":"/images/blog/open-ai-assistant.jpeg","description":"Step-by-step guide to create and test an assistant with generative AI using the OpenAI platform.","author":"José Pedro Schardosim Simão","language":"en"},"content":"$4"},{"slug":"2024-03-15-5-ferramentas-de-autoria","meta":{"title":"5 free authoring tools for creating multimedia content","date":"2024-03-15","readTime":"4 min","tag":"Education","coverImage":"/images/blog/5-ferramentas-de-autoria.jpeg","description":"5 free tools to create multimedia content and make classes more interactive.","author":"José Pedro Schardosim Simão","language":"en"},"content":"$5"},{"slug":"2024-03-10-hello-world","meta":{"title":"Hello World!","date":"2024-03-10","readTime":"1 min","tag":"General","coverImage":"/images/blog/react_header.webp","description":"An invitation to share with you my journey in the world of technology.","author":"José Pedro Schardosim Simão","language":"en"},"content":"$6"}],"locale":"en","translations":{"title":"Blog","description":"Articles and reflections on technology, software engineering and AI-driven development"}}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
+7:["$","script","script-0",{"src":"/_next/static/chunks/9d5537234acab16b.js","async":true}]
+8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
+b:null

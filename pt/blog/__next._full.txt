@@ -1,0 +1,150 @@
+1:"$Sreact.fragment"
+2:I[39756,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+3:I[37457,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"default"]
+6:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+7:"$Sreact.suspense"
+9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"ViewportBoundary"]
+b:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"MetadataBoundary"]
+d:I[68027,[],"default"]
+:HL["/_next/static/chunks/81302e5ff0679896.css","style"]
+:HL["/_next/static/media/2a65768255d6b625-s.p.d19752fb.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/83afe278b6a6bb3c-s.p.3a6ba036.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"b":"78lOrudov32-BR0Ema0ga","c":["","pt","blog"],"q":"","i":false,"f":[[["",{"children":[["locale","pt","d"],{"children":["blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true]}],[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/81302e5ff0679896.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/5bd81a671a527354.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/189f197bd22b9296.js","async":true,"nonce":"$undefined"}]],"$L4"]}],{"children":[["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L5",[["$","script","script-0",{"src":"/_next/static/chunks/9d5537234acab16b.js","async":true,"nonce":"$undefined"}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$L9",null,{"children":"$La"}],["$","div",null,{"hidden":true,"children":["$","$Lb",null,{"children":["$","$7",null,{"name":"Next.Metadata","children":"$Lc"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$d",[]],"S":true}
+:HL["https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap","style"]
+4:["$","html",null,{"lang":"pt","suppressHydrationWarning":true,"children":[["$","head",null,{"children":["$","link",null,{"rel":"stylesheet","href":"https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"}]}],["$","body",null,{"className":"inter_2fcf6573-module__qf7wrG__variable playfair_display_39c795c-module__zSmjFG__variable font-sans antialiased","children":"$Le"}]]}]
+f:I[42733,["/_next/static/chunks/5bd81a671a527354.js","/_next/static/chunks/189f197bd22b9296.js","/_next/static/chunks/9d5537234acab16b.js"],"default"]
+10:Taec,
+O desenvolvimento de software mudou. O que antes exigia dias de configuração de boilerplate e ajustes manuais, agora pode ser condensado em poucas horas de fluxo criativo. Recentemente, decidi refazer meu site pessoal do zero e o resultado foi surpreendente: uma manhã de trabalho foi o suficiente.
+
+## O Plano
+Antes de abrir o editor de código, eu tinha objetivos bem definidos para essa migração:
+
+- **Mudança de Stack:** Migrar de um backend em Flask (Python) para a modernidade do Next.js (React), buscando uma experiência mais fluida e melhor performance.
+
+- **Novo Layout:** Abandonar o design antigo por uma interface mais limpa, profissional e totalmente responsiva.
+
+- **Portabilidade de Dados:** Trazer minhas publicações do Currículo Lattes para o novo site de forma estruturada, sem precisar redigitar tudo.
+
+## O Workflow
+- **UI Design com Google Stitch:** Usei para prototipar componentes visualmente e garantir consistência estética antes de escrever o primeiro <div>.
+
+- **Gemini para Conversão de Dados:** O Currículo Lattes exporta um XML denso e difícil de manipular. Usei o Gemini para converter esse export para um JSON limpo, mapeando publicações e formação acadêmica em segundos.
+
+- **Copilot no VS Code:** Com os dados e o design definidos, o Copilot acelerou a escrita dos componentes React e a estilização em Tailwind, mantendo meu estado de flow.
+
+## Lições Aprendidas
+Trabalhar com IA em um projeto real traz aprendizados que vão além do "prompt engineering" básico. Aqui estão as principais conclusões dessa manhã:
+
+1. **A Ferramenta Certa para a Tarefa Certa:** Não tente fazer tudo com uma única IA. O Copilot é imbatível para contexto de código e autocomplete, enquanto o Gemini brilhou na tarefa de raciocínio estrutural e transformação de dados complexos (XML para JSON). O segredo está em saber qual "especialista" chamar para cada etapa.
+
+2. **Dividir para Conquistar:** Um erro comum é pedir múltiplas coisas ao mesmo tempo ("Crie este componente, converta estes dados e ajuste o CSS"). A IA funciona melhor com instruções atômicas. Se você separa a conversão de dados da lógica de interface, o índice de acerto é de quase 100%.
+
+3. **O Humano como Curador:** A IA gera o código, mas você define a arquitetura. A decisão de sair do Flask para o Next.js e como estruturar os componentes ainda é papel do desenvolvedor. A IA remove a fricção manual, mas a direção técnica continua sendo sua.
+
+## Conclusão
+Refazer um site em poucas horas não é sobre "atalhos", mas sobre alavancagem. Ao delegar a conversão bruta de dados e a escrita de código repetitivo, pude focar no que realmente importa: a arquitetura da minha presença digit
+
+A barreira entre a ideia e a execução nunca foi tão pequena.11:T77f,
+Você, como grande parte da população, deve ser um usuário assíduo das ferramentas de IA Generativa, como o [ChatGPT](https://chat.openai.com/). Mas você já pensou em ter seu próprio assistente baseado nessa tecnologia?
+
+Com o Assistants da OpenAI você pode criar assistentes personalizados, que agem de acordo com as suas instruções, buscam respostas em documentos que você pode prover e até podem ser integrados a outras aplicações e APIs.
+
+Essa funcionalidade é paga, mas a OpenAI oferece 5 doláres em créditos para quem cria uma nova conta, o que é mais do que suficiente para testarmos.
+
+Nesse artigo vamos criar juntos um assistente que responde perguntas sobre a Base Nacional Comum Curricular. Vamos nessa!
+
+1 - Crie uma conta no site da [OpenAI](https://platform.openai.com/signup). Você pode se autenticar com sua conta Google, Microsoft ou Apple.
+
+2 - No menu na lateral esquerda, abra "Assistants" e clique em "Create".
+
+3 - Preencha o nome do assistente e sua instrução. Aqui vamos usar "Você deve tirar dúvidas sobre a base nacional comum curricular e oferecer propostas de atividades baseadas no ano, componente curricular e competência.".
+
+4 - Marque como ativas as opções "Code interpreter" e "Retrieval".
+
+5 - Faça o download do PDF da BNCC [neste site](http://download.basenacionalcomum.mec.gov.br/) e envie-o na seção "Files".
+
+![OpenAI Image](/images/blog/assistants-1.png)
+
+6 - Clique em "Test"
+
+7 - No campo de mensagem, escreva uma pergunta sobre a BNCC, por exemplo "Quais são as competências específicas de Linguagens para o Ensino Fundamental?" e clique em "Run"
+
+![OpenAI Image](/images/blog/assistants-2.png)
+
+8 - Pronto! O assistente já consegue ajudar você a extrair informações da BNCC.
+
+O próximo passo é usar a API da OpenAI para utilizar esse assistente a partir de qualquer aplicação web. Mas isso já é tema pra outro post.
+
+Até mais,
+
+Zé12:T783,
+Utilizar conteúdo multimídia em suas aulas pode enriquecer a experiência de aprendizagem, tornando-a mais interativa e interessante. Aqui estão 5 ferramentas de autoria gratuitas que os você pode usar para criar diversos tipos de conteúdo para suas aulas:
+
+### Genially
+
+O [Genially](https://genial.ly/) é uma plataforma que permite a criação de apresentações interativas, infográficos, dossiês, quizzes, e outros conteúdos dinâmicos. Possui templates que facilitam a criação de materiais atrativos e interativos.
+
+![Genially Image](/images/blog/genially.gif)
+
+### Canva
+
+O [Canva](https://www.canva.com/) é uma ferramenta de edição de imagens e vídeos que oferece uma ampla gama de templates e designs para criar apresentações visuais, infográficos, pôsteres educacionais, e outros materiais gráficos. Dispõe de uma versão gratuita e a versão premium é [disponibilizada gratuitamente para professores da educação básica](https://www.canva.com/education/).
+
+![Canva Image](/images/blog/canva.gif)
+
+### Paddlet
+
+O [Padlet](https://padlet.com/) é uma plataforma versátil que permite criar murais digitais. Professores e alunos podem adicionar textos, imagens, links, vídeos, e documentos, facilitando a colaboração e o compartilhamento de recursos.
+
+![Padlet Image](/images/blog/padlet.gif)
+
+### Loom
+
+O [Loom](https://www.loom.com/) é uma ferramenta de gravação de tela e vídeo que facilita a criação de tutoriais e apresentações, permitindo que você grave sua tela sobrepondo a imagem da webcam. Está disponível para PC, Mac ou como uma extensão do Google Chrome.
+
+![Loom Image](/images/blog/loom.gif)
+
+### Powtoon
+
+O [Powtoon](https://www.powtoon.com/) permite a criação de vídeos animados facilmente, contando com uma biblioteca de modelos para diferentes formatos. 
+
+![Powtoon Image](/images/blog/powtoon.gif)
+
+
+Você já conhecia essas ferramentas?
+
+Até mais,
+
+Zé13:T76e,
+É com grande entusiasmo que inauguro este espaço. Meu nome é José Pedro, um engenheiro de software apaixonado e pesquisador incansável, sempre em busca de novos horizontes no campo da tecnologia. Neste blog compartilharei minhas descobertas, projetos e, claro, um pouco de código.
+
+**Minha Jornada**
+
+Comecei a me interessar por tecnologia no ensino médio graças aos laboratórios da escola que estudei que usavam Linux, e logo já estava brincando de programador. Resolvi fazer uma graduação na área de tecnologia, e desde o início pesquisei sobre o desenvolvimento de tecnologias educacionais. Após a graduação cursei um mestrado e depois de um tempo lecionando e atuando na indústria, comecei há pouco um doutorado em Informática na Educação, área onde atuo como Tech Lead em uma EdTech.
+
+**O que esperar deste blog?**
+
+Este site servirá como uma plataforma para compartilhar não apenas meu trabalho e projetos, mas também insights, tutoriais e discussões sobre as últimas tendências e desafios da tecnologia. Aqui, você encontrará:
+
+- **Postagens:** Reflexões sobre minha jornada, lições aprendidas e os desafios que enfrentei.
+- **Tutoriais e Guias:** Desde dicas rápidas até guias aprofundados sobre programação, frameworks, ferramentas e muito mais.
+- **Pesquisa:** Compartilharei insights sobre minha pesquisa na área de tecnologia educacional.
+
+**Um Convite**
+
+Considero este primeiro post não apenas uma introdução, mas um convite. Um convite para você se juntar a mim nesta jornada de descoberta, aprendizado e criação. Há um universo de possibilidades lá fora, e mal posso esperar para explorá-lo com vocês.
+
+Então, se você está pronto para embarcar nesta aventura comigo, fique à vontade para explorar, ler, aprender e interagir. Vamos juntos desvendar os mistérios da tecnologia e criar algo verdadeiramente incrível.
+
+Até mais,
+
+Zé5:["$","$Lf",null,{"articles":[{"slug":"2026-03-01-desenvolvimento-com-ia","meta":{"title":"Como refiz meu site pessoal em uma manhã usando IA","date":"2026-03-01","readTime":"6 min","tag":"Inteligência Artificial","coverImage":"/images/blog/stitch.png","description":"Por que e como usar IA no desenvolvimento de software para que a IA não use você.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$10"},{"slug":"2024-03-22-open-ai-assistant","meta":{"title":"Crie um assistente baseado em IA Generativa","date":"2024-03-22","readTime":"6 min","tag":"Inteligência Artificial","coverImage":"/images/blog/open-ai-assistant.jpeg","description":"Passo a passo para criar e testar um assistente com IA generativa usando a plataforma da OpenAI.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$11"},{"slug":"2024-03-15-5-ferramentas-de-autoria","meta":{"title":"5 ferramentas de autoria gratuitas para você criar conteúdo multimídia","date":"2024-03-15","readTime":"4 min","tag":"Educação","coverImage":"/images/blog/5-ferramentas-de-autoria.jpeg","description":"5 ferramentas gratuitas para criar conteúdos multimídia e deixar as aulas mais interativas.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$12"},{"slug":"2024-03-10-hello-world","meta":{"title":"Hello World!","date":"2024-03-10","readTime":"1 min","tag":"Geral","coverImage":"/images/blog/react_header.webp","description":"Um convite para compartilhar com você minha jornada no mundo da tecnologia.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$13"}],"locale":"pt","translations":{"title":"Blog","description":"Artigos e reflexões sobre tecnologia, engenharia de software e desenvolvimento com IA"}}]
+14:I[75696,["/_next/static/chunks/5bd81a671a527354.js","/_next/static/chunks/189f197bd22b9296.js"],"default"]
+e:["$","$L14",null,{"formats":"$undefined","locale":"pt","messages":{"common":{"language":"Português"},"navbar":{"home":"Início","blog":"Blog","cv":"Experiência","stack":"Stack","publications":"Publicações"},"footer":{"rights":"Todos os direitos reservados"},"home":{"title":"Tecnologia com propósito, engenharia com impacto.","titleHighlight":"impacto.","description":"Sou José Pedro Schardosim Simão, engenheiro de software e professor com mais de 15 anos de experiência na criação de aplicações limpas, escaláveis e centradas no usuário.","roles":["Engenheiro de Software Sênior","Professor"],"cta":{"cv":"Experiência","stack":"Stack"},"social":{"github":"GitHub","linkedin":"LinkedIn","lattes":"Lattes"},"philosophy":{"paragraph1":"Atuo na interseção entre pesquisa, educação, inovação e engenharia de software, buscando aproximar a academia do mercado de forma prática e aplicada. Transformo conhecimento teórico em soluções reais, combinando rigor metodológico com execução técnica.","paragraph2":"Acredito que a inovação acontece quando há diálogo entre método, formação e mercado, e trabalho para construir essa ponte por meio de pesquisa aplicada, educação tecnológica e desenvolvimento de sistemas com impacto concreto."}},"blog":{"title":"Blog","description":"Artigos e reflexões sobre tecnologia, engenharia de software e desenvolvimento com IA"},"cv":{"title":"Currículo","description":"Mais de 15 anos de experiência combinada em engenharia de software, educação e pesquisa.","filters":{"education":"Educação","technical":"Experiência Técnica","academic":"Experiência Acadêmica"},"sections":{"education":"Educação","technical":"Experiência Técnica","academic":"Experiência Acadêmica","skills":"Habilidades","languages":"Idiomas"},"skills":["DevOps","Cloud Computing","Microservices","System Design","Scalability","Agile Methodologies","CI/CD Pipelines"],"languages":[{"name":"Inglês","level":"Fluente/Avançado"},{"name":"Espanhol","level":"Intermediário"}],"education":[{"degree":"Doutorado em Informática na Educação","school":"Universidade Federal do Rio Grande do Sul","date":"2023 — presente"},{"degree":"Especialização em Tecnologias para Educação Profissional","school":"Instituto Federal de Santa Catarina","date":"2018 — 2019"},{"degree":"Mestrado em Tecnologias da Informação e Comunicação","school":"Universidade Federal de Santa Catarina","date":"2016 — 2018"},{"degree":"Bacharelado em Tecnologias da Informação e Comunicação","school":"Universidade Federal de Santa Catarina","date":"2011 — 2015"}],"workExperience":[{"title":"Engenheiro de Software Sênior","company":"SAP","date":"Out 2024 — presente","description":""},{"title":"Líder Técnico","company":"HardFun Studios","date":"Set 2023 — Out 2024","description":""},{"title":"Mentor Educacional","company":"SENAI - Departamento Regional de Santa Catarina","date":"Nov 2022 — Abr 2023","description":""},{"title":"Engenheiro de Software","company":"Hewlett-Packard Computadores","date":"Ago 2021 — Set 2023","description":""},{"title":"Analista de Tecnologia da Informação","company":"SENAI - Departamento Regional do Rio Grande do Sul","date":"Set 2019 — Out 2021","description":""},{"title":"Estagiário","company":"Rede Nacional de Ensino e Pesquisa","date":"Jan 2015 — Dez 2015","description":""}],"academicExperience":[{"title":"Professor Assistente","company":"Pontifícia Universidade Católica do Rio Grande do Sul","date":"Fev 2026 — presente","description":""},{"title":"Professor Tutor","company":"Universidade Federal de Mato Grosso do Sul","date":"Mar 2025 — presente","description":""},{"title":"Tutor","company":"Universidade Federal do Rio Grande","date":"Set 2020 — Mar 2022","description":""},{"title":"Professor Substituto","company":"Instituto Federal de Santa Catarina","date":"Fev 2018 — Set 2019","description":""},{"title":"Bolsista de Mestrado","company":"Universidade Federal de Santa Catarina","date":"Mar 2016 — Fev 2017","description":""},{"title":"Estagiário de Pesquisa","company":"Télé-Université, Université du Québec","date":"Out 2016 — Fev 2017","description":""},{"title":"Auxiliar de Pesquisa e Educação","company":"Télé-Université, Université du Québec","date":"Nov 2016 — Fev 2017","description":""},{"title":"Bolsista de Iniciação Científica","company":"Universidade Federal de Santa Catarina","date":"Jun 2012 — Dez 2015","description":""}]},"stack":{"title":"Stack","description":"Uma visão geral das tecnologias, linguagens e ferramentas que compõem minha stack.","ui":{"category":"Categoria:","all":"Todos","searchPlaceholder":"Buscar tecnologia, categoria, experiência...","clear":"Limpar","showing":"Mostrando","item":"item","items":"itens"},"categories":{"languages":"Linguagens","frontend":"Frontend","backend":"Backend","dataAi":"Dados & IA","infraDevops":"Infra & DevOps","cloud":"Nuvem","observability":"Observabilidade","databases":"Bancos de Dados","messaging":"Mensageria","testing":"Testes"},"experience":{"specialist":"Especialista","advanced":"Avançado","proficient":"Proficiente","intermediate":"Intermediário","learning":"Aprendendo"},"techs":{"typescript":"Minha principal ferramenta para aplicações complexas e seguras por tipagem.","python":"APIs, automação, processamento de dados e integrações com IA.","go":"Serviços cloud-native e ferramentas com alta performance.","ruby":"Scripts, automações e manutenção de sistemas legados.","php":"Backends web e manutenção/evolução de aplicações.","nextjs":"Apps SSR/ISR, SEO e performance.","react":"Componentização, hooks e padrões de UI.","tailwind":"UI rápida com utilitários e consistência de design.","fastapi":"APIs assíncronas com OpenAPI e tipagem.","nodejs":"APIs, workers e integrações.","rails":"Desenvolvimento ágil de backends web com convenção sobre configuração.","graphql":"APIs orientadas a schema e camadas de agregação.","laravel":"Desenvolvimento rápido de aplicações PHP com boa estrutura e produtividade.","bedrock":"Agents, tool use, integrações e arquitetura de apps com modelos fundacionais.","openai":"Construção de aplicações com LLMs, ferramentas e fluxos multimodais.","postgresql":"Modelagem relacional, índices e performance.","dynamodb":"Padrões de alta escala e single-table.","redis":"Cache, rate limit e filas simples.","docker":"Containers, multi-stage builds e consistência dev/prod.","kubernetes":"Deployments, services e escalabilidade.","cloudformation":"IaC com templates e stacks.","terraform":"IaC com módulos e ambientes.","githubactions":"CI/CD com workflows, gates e releases.","aws":"Serviços cloud-native e arquitetura.","azure":"Serviços e integrações em ambiente corporativo.","opentelemetry":"Traces, métricas e logs com instrumentação padrão.","dynatrace":"APM, dashboards e alertas.","kibana":"Dashboards, exploração e visualização de logs/métricas.","sonarqube":"Qualidade de código, métricas e análise estática.","jest":"Testes unitários e integração em JS/TS.","pytest":"Testes em Python com fixtures.","locust":"Testes de carga e performance com cenários realistas."}},"publications":{"title":"Publicações","description":"Artigos publicados, anais de eventos e capítulos de livros.","filters":{"all":"Todos","articles":"Artigos","conferences":"Anais de Eventos","bookChapters":"Capítulos de Livros","label":"Filtro:"},"search":{"placeholder":"Pesquisar publicações..."},"table":{"titleAuthors":"Título e Autores","publication":"Publicação","year":"Ano"},"actions":{"read":"Ler","cite":"Citar","bibtex":"BibTeX","copyCitation":"Copiar Citação"},"modal":{"title":"Citação ABNT"}}},"now":"$undefined","timeZone":"America/Sao_Paulo","children":"$L15"}]
+16:I[88905,["/_next/static/chunks/5bd81a671a527354.js","/_next/static/chunks/189f197bd22b9296.js"],"default"]
+15:["$","div",null,{"className":"relative flex min-h-screen w-full flex-col overflow-x-hidden","children":[["$","$L16",null,{}],["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}],"$L17"]}]
+17:["$","footer",null,{"className":"border-t border-gray-200 py-16 px-6 md:px-20 bg-white","children":["$","div",null,{"className":"max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10","children":["$","div",null,{"className":"flex items-center gap-3","children":[["$","div",null,{"className":"size-7 bg-content-dark rounded-lg flex items-center justify-center text-white","children":["$","span",null,{"className":"material-symbols-outlined text-sm","children":"terminal"}]}],["$","h2",null,{"className":"text-content-dark text-sm font-bold tracking-tight","children":["Schardosim © ",2026]}]]}]}]}]
+a:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+18:I[27201,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"IconMark"]
+8:null
+c:[["$","title","0",{"children":"José Pedro Schardosim Simão | Engenheiro de Software Sênior"}],["$","meta","1",{"name":"description","content":"Engenheiro de software e professor com mais de 15 anos de experiência na criação de aplicações limpas, escaláveis e centradas no usuário."}],["$","meta","2",{"property":"og:title","content":"José Pedro Schardosim Simão | Engenheiro de Software Sênior"}],["$","meta","3",{"property":"og:description","content":"Engenheiro de software e professor com mais de 15 anos de experiência na criação de aplicações limpas, escaláveis e centradas no usuário."}],["$","meta","4",{"property":"og:url","content":"https://simaoj.github.io"}],["$","meta","5",{"property":"og:locale","content":"pt_BR"}],["$","meta","6",{"property":"og:type","content":"website"}],["$","meta","7",{"name":"twitter:card","content":"summary"}],["$","meta","8",{"name":"twitter:title","content":"José Pedro Schardosim Simão | Engenheiro de Software Sênior"}],["$","meta","9",{"name":"twitter:description","content":"Engenheiro de software e professor com mais de 15 anos de experiência na criação de aplicações limpas, escaláveis e centradas no usuário."}],["$","link","10",{"rel":"icon","href":"/favicon.ico?favicon.0b3bf435.ico","sizes":"256x256","type":"image/x-icon"}],["$","link","11",{"rel":"icon","href":"/favicon.ico"}],["$","$L18","12",{}]]
