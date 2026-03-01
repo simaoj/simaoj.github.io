@@ -10,27 +10,17 @@ npm run build
 
 echo "📦 Preparing deployment files..."
 
-# Create a temporary directory for deployment
-DEPLOY_DIR="/tmp/gh-deploy-$(date +%s)"
-mkdir -p "$DEPLOY_DIR"
-
-# Copy the .next/static directory (built assets)
-if [ -d ".next/static" ]; then
-  cp -r .next/static "$DEPLOY_DIR/"
-else
-  echo "⚠️  Warning: .next/static not found"
-fi
-
-# Copy public directory if it exists
-if [ -d "public" ]; then
-  cp -r public/* "$DEPLOY_DIR/" 2>/dev/null || true
+# Check if out directory exists (static export)
+if [ ! -d "out" ]; then
+  echo "❌ Error: 'out' directory not found. Build may have failed."
+  exit 1
 fi
 
 # Create a .nojekyll file to tell GitHub Pages not to use Jekyll
-touch "$DEPLOY_DIR/.nojekyll"
+touch out/.nojekyll
 
 # Create a simple index.html that redirects to /pt (Portuguese - default locale)
-cat > "$DEPLOY_DIR/index.html" << 'EOF'
+cat > out/index.html << 'EOF'
 <!DOCTYPE html>
 <html>
   <head>
@@ -59,12 +49,12 @@ else
 fi
 
 # Remove all files except .git
-git ls-files -z | xargs -0 rm -f
+git ls-files -z | xargs -0 rm -f 2>/dev/null || true
 rm -rf * .nojekyll 2>/dev/null || true
 
-# Copy deployment files from temp directory
-cp -r "$DEPLOY_DIR"/* .
-[ -f "$DEPLOY_DIR/.nojekyll" ] && cp "$DEPLOY_DIR/.nojekyll" .
+# Copy deployment files from out directory
+cp -r ../out/* .
+[ -f ../out/.nojekyll ] && cp ../out/.nojekyll .
 
 # Stage and commit
 git add -A
@@ -75,25 +65,6 @@ git push origin gh-pages
 
 # Return to the original branch
 git checkout "$CURRENT_BRANCH"
-
-# Clean up temp directory
-rm -rf "$DEPLOY_DIR"
-
-echo "✅ Deployment complete!"
-echo "🌐 Your site will be published at: https://simaoj.github.io"
-
-# Stage and commit
-git add -A
-git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
-
-# Push to gh-pages
-git push origin gh-pages
-
-# Return to the original branch
-git checkout "$CURRENT_BRANCH"
-
-# Clean up
-rm -rf "$DEPLOY_DIR"
 
 echo "✅ Deployment complete!"
 echo "🌐 Your site will be published at: https://simaoj.github.io"
