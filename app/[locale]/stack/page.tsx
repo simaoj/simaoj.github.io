@@ -55,10 +55,10 @@ export default function TechStack() {
   const techs: Tech[] = [
     // Linguagens
     { name: "TypeScript", categoryKey: "languages", icon: "data_object", levelKey: "specialist", descriptionKey: "typescript", bgColor: "bg-blue-600" },
-    { name: "Python", categoryKey: "languages", icon: "integration_instructions", levelKey: "advanced", descriptionKey: "python", bgColor: "bg-yellow-400" },
-    { name: "Go", categoryKey: "languages", icon: "bolt", levelKey: "learning", descriptionKey: "go", bgColor: "bg-cyan-500" },
-    { name: "Ruby", categoryKey: "languages", icon: "diamond", levelKey: "intermediate", descriptionKey: "ruby", bgColor: "bg-rose-600" },
-    { name: "PHP", categoryKey: "languages", icon: "code_blocks", levelKey: "intermediate", descriptionKey: "php", bgColor: "bg-indigo-600" },
+    { name: "Python", categoryKey: "languages", icon: "integration_instructions", levelKey: "specialist", descriptionKey: "python", bgColor: "bg-yellow-400" },
+    { name: "Go", categoryKey: "languages", icon: "bolt", levelKey: "intermediate", descriptionKey: "go", bgColor: "bg-cyan-500" },
+    { name: "Ruby", categoryKey: "languages", icon: "diamond", levelKey: "specialist", descriptionKey: "ruby", bgColor: "bg-rose-600" },
+    { name: "PHP", categoryKey: "languages", icon: "code_blocks", levelKey: "advanced", descriptionKey: "php", bgColor: "bg-indigo-600" },
 
     // Frontend
     { name: "Next.js", categoryKey: "frontend", icon: "token", levelKey: "advanced", descriptionKey: "nextjs", bgColor: "bg-black" },

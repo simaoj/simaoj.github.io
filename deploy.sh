@@ -4,7 +4,7 @@
 # This script builds the Next.js site and deploys the out folder to gh-pages branch
 
 set -e
-
+rm -rf out .next _next
 echo "🔨 Building the site..."
 npm run build
 
