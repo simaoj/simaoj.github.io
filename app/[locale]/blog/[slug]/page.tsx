@@ -61,7 +61,7 @@ export default async function PostPage({
         </header>
         
         {/* Markdown Content */}
-        <article className="prose max-w-none dark:prose-invert prose-headings:font-serif prose-headings:font-bold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-a:text-blue-600 prose-a:underline hover:prose-a:text-blue-700 prose-code:bg-gray-150 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-pre:bg-gray-900 prose-pre:text-white prose-blockquote:border-l-4 prose-blockquote:border-blue-600 prose-blockquote:pl-4 prose-img:rounded-lg prose-img:shadow-md dark:prose-code:bg-gray-800">
+        <article className="prose max-w-none prose-headings:font-serif prose-headings:font-bold prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl prose-a:text-blue-600 prose-a:underline hover:prose-a:text-blue-700 prose-code:bg-gray-150 prose-code:px-2 prose-code:py-1 prose-code:rounded prose-pre:bg-gray-900 prose-pre:text-white prose-blockquote:border-l-4 prose-blockquote:border-blue-600 prose-blockquote:pl-4 prose-img:rounded-lg prose-img:shadow-md dark:prose-code:bg-gray-800">
           <ReactMarkdown>
             {post.content}
           </ReactMarkdown>
