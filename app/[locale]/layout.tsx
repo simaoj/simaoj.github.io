@@ -18,6 +18,10 @@ const playfair = Playfair_Display({
   weight: ["700", "800"],
 });
 
+export function generateStaticParams() {
+  return [{ locale: "en" }, { locale: "pt" }];
+}
+
 export async function generateMetadata({
   params,
 }: {
