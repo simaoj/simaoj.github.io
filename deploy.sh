@@ -39,6 +39,9 @@ EOF
 # Store the current branch
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
 
+# Save the out directory path before switching branches
+OUT_PATH=$(pwd)/out
+
 echo "📤 Deploying to gh-pages branch..."
 
 # Check if gh-pages branch exists
@@ -53,8 +56,8 @@ git ls-files -z | xargs -0 rm -f 2>/dev/null || true
 rm -rf * .nojekyll 2>/dev/null || true
 
 # Copy deployment files from out directory
-cp -r ../out/* .
-[ -f ../out/.nojekyll ] && cp ../out/.nojekyll .
+cp -r "$OUT_PATH"/* .
+[ -f "$OUT_PATH/.nojekyll" ] && cp "$OUT_PATH/.nojekyll" .
 
 # Stage and commit
 git add -A
