@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Deploy script for GitHub Pages
-# This script builds the Next.js site and deploys it to the gh-pages branch
+# This script builds the Next.js site and deploys to gh-pages branch
 
 set -e
 
@@ -10,17 +10,36 @@ npm run build
 
 echo "📦 Preparing deployment files..."
 
-# Create a temporary directory for the build output
-TEMP_DIR="./.gh-pages-temp"
-rm -rf "$TEMP_DIR"
-mkdir -p "$TEMP_DIR"
+# Create a temporary directory for deployment
+DEPLOY_DIR="./gh-deploy"
+rm -rf "$DEPLOY_DIR"
+mkdir -p "$DEPLOY_DIR"
 
-# Copy the static files to the temporary directory
-cp -r .next/static "$TEMP_DIR/"
-cp -r public/* "$TEMP_DIR/"
+# Copy the .next/static directory (built assets)
+cp -r .next/static "$DEPLOY_DIR/"
 
-# Create .nojekyll file to disable Jekyll processing
-touch "$TEMP_DIR/.nojekyll"
+# Copy public directory
+cp -r public/* "$DEPLOY_DIR/"
+
+# Create a .nojekyll file to tell GitHub Pages not to use Jekyll
+touch "$DEPLOY_DIR/.nojekyll"
+
+# Create a simple index.html that redirects to /pt (Portuguese - default locale)
+cat > "$DEPLOY_DIR/index.html" << 'EOF'
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=/pt/" />
+    <link rel="canonical" href="/pt/" />
+  </head>
+  <body>
+    <h1>Site está sendo redirecionado...</h1>
+    <p><a href="/pt/">Clique aqui se não for redirecionado automaticamente</a></p>
+  </body>
+</html>
+EOF
 
 # Store the current branch
 CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
@@ -34,11 +53,13 @@ else
   git checkout --orphan gh-pages
 fi
 
-# Remove all files and copy new build
-rm -rf *
-rm -rf .nojekyll
-cp -r "$TEMP_DIR"/* .
-cp "$TEMP_DIR/.nojekyll" .
+# Remove all files except .git
+git ls-files -z | xargs -0 rm -f
+rm -rf * .nojekyll
+
+# Copy deployment files
+cp -r "$DEPLOY_DIR"/* .
+cp "$DEPLOY_DIR/.nojekyll" .
 
 # Stage and commit
 git add -A
@@ -51,7 +72,7 @@ git push origin gh-pages
 git checkout "$CURRENT_BRANCH"
 
 # Clean up
-rm -rf "$TEMP_DIR"
+rm -rf "$DEPLOY_DIR"
 
 echo "✅ Deployment complete!"
 echo "🌐 Your site will be published at: https://simaoj.github.io"

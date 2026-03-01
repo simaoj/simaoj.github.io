@@ -38,27 +38,43 @@ npm run deploy
 ```
 
 This script will:
-1. Build the Next.js site (`npm run build`)
-2. Generate static files
+1. Build the Next.js site using `npm run build`
+2. Collect static assets from `.next/static` and `public` directories
 3. Create or update the `gh-pages` branch
 4. Push the built files to the `gh-pages` branch
 5. Return to your current branch
 
 The site will be published at: `https://simaoj.github.io`
 
+**Note:** The first page loads redirect to `/pt` (Portuguese) by default.
+
 ### Prerequisites
 
 Before deploying, make sure:
 - You have git configured with your credentials
 - Your GitHub repository has GitHub Pages enabled for the `gh-pages` branch
-- Your repository is configured at `/Users/schardosim/code/simaoj.github.io`
+- The repository is pushed to `origin`
+
+### How It Works
+
+The deployment process:
+- Copies `.next/static` (CSS, JavaScript bundles) to gh-pages branch
+- Copies `public` assets (images, fonts, etc.)  
+- Creates a `.nojekyll` file to tell GitHub not to process with Jekyll
+- Creates an `index.html` redirect to `/pt/` (default Portuguese locale)
 
 ### Manual Alternative
 
 If you prefer to manage the deployment manually:
 
 ```bash
-npm run build       # Build the site
-# Manually push the .next/static and public directories to gh-pages branch
+npm run build                   # Build the site
+# Contents of .next/static and public are deployed to gh-pages
+git checkout gh-pages
+cp -r .next/static/* .
+cp -r public/* .
+git add -A
+git commit -m "Deploy: $(date)"
 git push origin gh-pages
+git checkout main              # or your main branch
 ```
