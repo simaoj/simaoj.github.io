@@ -13,8 +13,9 @@
     "rights": "All rights reserved"
   },
   "home": {
-    "title": "Technology with purpose, engineering with impact.",
+    "title": "Technology with purpose, engineering with ",
     "titleHighlight": "impact.",
+    "philosophyTitle": "Philosophy",
     "description": "I'm José Pedro Schardosim Simão, a senior software engineer and professor with over 15 years of experience creating clean, scalable, and user-centered applications.",
     "roles": ["Senior Software Engineer", "Professor"],
     "cta": {

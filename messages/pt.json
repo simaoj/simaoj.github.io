@@ -13,8 +13,9 @@
     "rights": "Todos os direitos reservados"
   },
   "home": {
-    "title": "Tecnologia com propósito, engenharia com impacto.",
+    "title": "Tecnologia com propósito, engenharia com ",
     "titleHighlight": "impacto.",
+    "philosophyTitle": "Filosofia",
     "description": "Sou José Pedro Schardosim Simão, engenheiro de software e professor com mais de 15 anos de experiência na criação de aplicações limpas, escaláveis e centradas no usuário.",
     "roles": ["Engenheiro de Software Sênior", "Professor"],
     "cta": {

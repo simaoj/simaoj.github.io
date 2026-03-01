@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 
 export default function Home() {
   const t = useTranslations();
+  const locale = useLocale();
 
   const rolesEn = ["Senior Software Engineer", "Professor"];
   const rolesPt = ["Engenheiro de Software Sênior", "Professor"];
@@ -31,18 +32,18 @@ export default function Home() {
                 ))}
               </div>
               <h1 className="section-heading text-5xl md:text-6xl leading-[1.05] tracking-tight">
-                {t("home.title")}
+                {t("home.title")} <span className="text-primary">{t("home.titleHighlight")}</span>
               </h1>
               <p className="text-content-muted text-md md:text-xl leading-relaxed max-w-2xl font-light">
                 {t("home.description")}
               </p>
             </div>
             <div className="flex flex-wrap gap-5">
-              <Link href="/cv" className="bg-primary hover:bg-blue-700 text-white px-10 py-5 rounded-full font-bold transition-all flex items-center gap-3 shadow-xl shadow-blue-500/20 group">
+              <Link href={`/${locale}/cv`} className="bg-primary hover:bg-blue-700 text-white px-10 py-5 rounded-full font-bold transition-all flex items-center gap-3 shadow-xl shadow-blue-500/20 group">
                 {t("home.cta.cv")}
                 <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
               </Link>
-              <Link href="/stack" className="bg-white border border-gray-200 hover:border-content-dark text-content-dark px-10 py-5 rounded-full font-bold transition-all">
+              <Link href={`/${locale}/stack`} className="bg-white border border-gray-200 hover:border-content-dark text-content-dark px-10 py-5 rounded-full font-bold transition-all">
                 {t("home.cta.stack")}
               </Link>
             </div>
@@ -79,7 +80,7 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
           <div>
             <h2 className="section-heading text-4xl mb-8">
-              {t("home.title").split(",")[0]}
+              {t("home.philosophyTitle")}
             </h2>
             <div className="flex flex-col gap-6 text-content-muted text-lg leading-relaxed">
               <p>
