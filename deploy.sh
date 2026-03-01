@@ -11,15 +11,20 @@ npm run build
 echo "📦 Preparing deployment files..."
 
 # Create a temporary directory for deployment
-DEPLOY_DIR="./gh-deploy"
-rm -rf "$DEPLOY_DIR"
+DEPLOY_DIR="/tmp/gh-deploy-$(date +%s)"
 mkdir -p "$DEPLOY_DIR"
 
 # Copy the .next/static directory (built assets)
-cp -r .next/static "$DEPLOY_DIR/"
+if [ -d ".next/static" ]; then
+  cp -r .next/static "$DEPLOY_DIR/"
+else
+  echo "⚠️  Warning: .next/static not found"
+fi
 
-# Copy public directory
-cp -r public/* "$DEPLOY_DIR/"
+# Copy public directory if it exists
+if [ -d "public" ]; then
+  cp -r public/* "$DEPLOY_DIR/" 2>/dev/null || true
+fi
 
 # Create a .nojekyll file to tell GitHub Pages not to use Jekyll
 touch "$DEPLOY_DIR/.nojekyll"
@@ -55,11 +60,27 @@ fi
 
 # Remove all files except .git
 git ls-files -z | xargs -0 rm -f
-rm -rf * .nojekyll
+rm -rf * .nojekyll 2>/dev/null || true
 
-# Copy deployment files
+# Copy deployment files from temp directory
 cp -r "$DEPLOY_DIR"/* .
-cp "$DEPLOY_DIR/.nojekyll" .
+[ -f "$DEPLOY_DIR/.nojekyll" ] && cp "$DEPLOY_DIR/.nojekyll" .
+
+# Stage and commit
+git add -A
+git commit -m "Deploy: $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+
+# Push to gh-pages
+git push origin gh-pages
+
+# Return to the original branch
+git checkout "$CURRENT_BRANCH"
+
+# Clean up temp directory
+rm -rf "$DEPLOY_DIR"
+
+echo "✅ Deployment complete!"
+echo "🌐 Your site will be published at: https://simaoj.github.io"
 
 # Stage and commit
 git add -A
