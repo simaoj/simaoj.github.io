@@ -1,53 +1,36 @@
-# Northendlab Jekyll
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-![northendlab](https://demo.themefisher.com/thumbnails/northendlab-jekyll.png)
+## Getting Started
 
-[live demo](https://demo.themefisher.com/northendlab-jekyll/)
+First, run the development server:
 
-### Jekyll Install
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-First of all, you need to install Jekyll on your PC. If you don't know how to install Jekyll on your PC, here is great [documentation](https://jekyllrb.com/docs/installation/) for beginners.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Theme Install
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-After installing Jekyll on your pc, [download](https://github.com/themefisher/northendlab-jekyll) the theme from this repository. Unzip it and run `bundle exec jekyll server` to run this template on your localhost.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### Main Configuration
+## Learn More
 
-You don't need to change anything in the main configuration (`_config.yml`), just you need to change the `baseURL` when you host this template.
+To learn more about Next.js, take a look at the following resources:
 
-You will find every parameter in `_data/parameters.yml`` this file.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-#### Navigation Menu
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-You can set the main menu and footer menu also from `_data/parameters.yml`, just follow the existing loop for creating a new menu item. This theme also supports the dropdown menu.
+## Deploy on Vercel
 
-### Creating New Post
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-For creating a new blog post, you need to go to the `_posts` folder and create a new file. Make sure you are creating this file name with the existing post name structure which is `year-month-date-post-name.md`. (i.e `2020-02-06-my-awesome-blog.md`). Then follow the existing post front-matter to configure it. Or you can simply copy an existing post and replace its content.
-
-### Creating a New Author
-
-This is the same process for the blog post. Copy an existing author file, and replace your content and file name.
-
-### Customize Other Pages
-
-Another page customization (like about, contact) is very easy. You can see the other page in the `_pages/` folder. Find the page that you want to customize, and change the content from it. If this page has any loop item, then follow the existing loop to create a new one.
-
-### Reporting Issues
-
-We use GitHub Issues as the official bug tracker for the **Northendlab Jekyll Theme**. Please Search [existing issues](https://github.com/themefisher/northendlab-jekyll/issues). It’s possible someone has already reported the same problem.
-If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/northendlab-jekyll/issues/new)
-
-### Technical Support or Questions (Paid)
-
-If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.
-
-<!-- licence -->
-## License
-
-Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
-
-**Code License:** Released under the [MIT](https://github.com/themefisher/northendlab-jekyll/blob/main/LICENSE) license.
-
-**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
