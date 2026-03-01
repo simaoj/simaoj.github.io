@@ -1,0 +1,191 @@
+[00:00:00.503] Server  WARN    ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+[00:00:00.550] Server  LOG     ✓ Ready in 434ms
+[00:00:01.378] Server  ERROR   ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+[00:00:01.593] Browser ERROR   uncaughtError: Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+[00:00:14.188] Server  ERROR   ⨯ Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+[00:00:14.200] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:14.411] Browser ERROR   uncaughtError: Error: Failed to call `useTranslations` because the context from `NextIntlClientProvider` was not found.
+
+This can happen because:
+1) You intended to render this component as a Server Component, the render
+   failed, and therefore React attempted to render the component on the client
+   instead. If this is the case, check the console for server errors.
+2) You intended to render this component on the client side, but no context was found.
+   Learn more about this error here: https://next-intl.dev/docs/environments/server-client-components#missing-context
+[00:00:20.564] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:00:20.649] Server  WARN    ⚠ Fast Refresh had to perform a full reload due to a runtime error.
+[00:01:35.844] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:35.844] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:35.844] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:39.777] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> div  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:"...", ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/pt" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body className="inter_2fcf...">
+>                           <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+                              <Navbar>
+                              ...
+                                <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                                  <SegmentTrieNode>
+                                  <script>
+                                  <script>
+                                  <script>
+                                  <RootLayout>
+>                                   <html lang="pt" suppressHydrationWarning={true}>
+                              ...
+                  ...
+
+[00:01:39.777] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. div <html>
+[00:01:39.777] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'insertBefore' on 'Node': The node before which the new node is to be inserted is not a child of this node.
+[00:01:39.777] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:01:39.777] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:01:47.344] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:47.344] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:47.344] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:01:51.747] Browser ERROR   In HTML, %s cannot be a child of <%s>.%s
+This will cause a hydration error.%s <html> div  
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:"...", ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/pt" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head>
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.tsx">
+                      <SegmentTrieNode>
+                      <link>
+                      <script>
+                      <script>
+                      <RootLayout>
+                        <html lang="en">
+                          <head>
+                          <body className="inter_2fcf...">
+>                           <div className="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+                              <Navbar>
+                              ...
+                                <SegmentViewNode type="layout" pagePath="[locale]/l...">
+                                  <SegmentTrieNode>
+                                  <script>
+                                  <script>
+                                  <script>
+                                  <RootLayout>
+>                                   <html lang="pt" suppressHydrationWarning={true}>
+                              ...
+                  ...
+
+[00:01:51.747] Browser ERROR   <%s> cannot contain a nested %s.
+See this log for the ancestor stack trace. div <html>
+[00:01:51.747] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'insertBefore' on 'Node': The node before which the new node is to be inserted is not a child of this node.
+[00:01:51.747] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:01:51.747] Browser ERROR   uncaughtError: NotFoundError: Failed to execute 'removeChild' on 'Node': The node to be removed is not a child of this node.
+[00:02:24.096] Server  LOG     ✓ Compiled in 429ms
+[00:03:35.375] Server  ERROR   An invalid locale was provided: "publications"
+Please ensure you're using a valid Unicode locale identifier (e.g. "en-US").
+[00:05:11.594] Server  ERROR   An invalid locale was provided: "publications"
+Please ensure you're using a valid Unicode locale identifier (e.g. "en-US").
+[00:05:13.059] Server  ERROR   An invalid locale was provided: "publications"
+Please ensure you're using a valid Unicode locale identifier (e.g. "en-US").
+[00:05:15.424] Server  LOG     ✓ Compiled in 77ms
+[00:06:39.992] Server  LOG     ✓ Compiled in 97ms
+[00:07:09.846] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:09.846] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:07:09.846] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:08:14.916] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `home.philosophy.paragraph1` in messages for locale `en`."}
+[00:08:14.916] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `home.philosophy.paragraph2` in messages for locale `en`."}
+[00:08:14.916] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `home.philosophy.paragraph1` in messages for locale `en`."}
+[00:08:14.916] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `home.philosophy.paragraph2` in messages for locale `en`."}
+[00:12:07.189] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `navbar.home` in messages for locale `en`."}
+[00:12:07.189] Browser ERROR   {"code":"MISSING_MESSAGE","originalMessage":"Could not resolve `navbar.home` in messages for locale `en`."}
+[00:14:43.455] Server  LOG     ✓ Compiled in 17ms
+[00:14:57.845] Server  LOG     ✓ Compiled in 14ms
+[00:17:26.377] Server  WARN    ⚠ Fast Refresh had to perform a full reload when ./app/[locale]/stack/page.tsx changed. Read more: https://nextjs.org/docs/messages/fast-refresh-reload
+[00:17:26.399] Server  LOG     ✓ Compiled in 51ms
+[00:21:15.167] Server  LOG     ✓ Compiled in 19ms
+[00:21:39.233] Server  LOG     ✓ Compiled in 23ms
+[00:24:06.976] Server  LOG     ✓ Compiled in 45ms
+[00:25:20.108] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:20.108] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:20.108] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:25.123] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:25.123] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:25:25.123] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:25:25.123] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:37.913] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:37.913] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:29:37.913] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:37.913] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:46.771] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:29:55.300] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:30:38.539] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:30:38.539] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:41:18.075] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:41:18.075] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:41:18.075] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:41:19.245] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:26.078] Browser WARN    Image with src "/images/blog/stitch.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:31.903] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:31.903] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:44:32.860] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:35.487] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:35.487] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:35.487] Browser WARN    Image with src "/images/blog/stitch.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:37.446] Browser WARN    Image with src "/images/blog/stitch.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:48:37.446] Browser WARN    Image with src "/images/blog/stitch.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:37.446] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:37.446] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:48:40.190] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:49:09.958] Browser WARN    Image with src "/images/blog/stitch.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:49:09.958] Browser WARN    Image with src "/images/blog/stitch.png" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:49:09.958] Browser WARN    Image with src "/images/blog/open-ai-assistant.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:49:09.958] Browser WARN    Image with src "/images/blog/5-ferramentas-de-autoria.jpeg" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes
+[00:49:09.958] Browser WARN    Image with src "/images/blog/react_header.webp" has "fill" but is missing "sizes" prop. Please add it to improve page performance. Read more: https://nextjs.org/docs/api-reference/next/image#sizes

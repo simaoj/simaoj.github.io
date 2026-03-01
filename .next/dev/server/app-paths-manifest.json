@@ -1,0 +1,12 @@
+{
+  "/[locale]/blog/[slug]/page": "app/[locale]/blog/[slug]/page.js",
+  "/[locale]/blog/page": "app/[locale]/blog/page.js",
+  "/[locale]/cv/page": "app/[locale]/cv/page.js",
+  "/[locale]/page": "app/[locale]/page.js",
+  "/[locale]/publications/page": "app/[locale]/publications/page.js",
+  "/[locale]/stack/page": "app/[locale]/stack/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/cv/page": "app/cv/page.js",
+  "/publications/page": "app/publications/page.js",
+  "/stack/page": "app/stack/page.js"
+}

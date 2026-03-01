@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/messages/en.json"],"sourcesContent":["{\"common\":{\"language\":\"English\"},\"navbar\":{\"blog\":\"Blog\",\"cv\":\"Experience\",\"stack\":\"Stack\",\"publications\":\"Publications\"},\"footer\":{\"rights\":\"All rights reserved\"},\"home\":{\"title\":\"Technology with purpose, engineering with impact.\",\"titleHighlight\":\"impact.\",\"description\":\"I'm José Pedro Schardosim Simão, a senior software engineer and professor with over 15 years of experience creating clean, scalable, and user-centered applications.\",\"roles\":[\"Senior Software Engineer\",\"Professor\"],\"cta\":{\"cv\":\"Experience\",\"stack\":\"Stack\"},\"social\":{\"github\":\"GitHub\",\"linkedin\":\"LinkedIn\",\"lattes\":\"Lattes\"}},\"blog\":{\"title\":\"Blog\",\"description\":\"Articles and reflections on technology, software engineering and AI-driven development\"},\"cv\":{\"title\":\"Resume\"},\"stack\":{\"title\":\"Stack\"},\"publications\":{\"title\":\"Publications\"}}"],"names":[],"mappings":"AAAA"}},
+    {"offset": {"line": 3, "column": 844}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}
