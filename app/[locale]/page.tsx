@@ -65,7 +65,7 @@ export default function Home() {
               <div className="relative bg-white p-3 rounded-[2.5rem] shadow-2xl border border-gray-100">
                 <div className="overflow-hidden rounded-[2rem] aspect-[4/5] bg-gray-50">
                   <img
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-1000"
+                    className="w-full h-full object-cover"
                     alt="Professional headshot"
                     src="/home.png"
                   />
