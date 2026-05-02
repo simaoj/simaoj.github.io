@@ -1,8 +1,105 @@
 1:"$Sreact.fragment"
 2:I[42733,["/_next/static/chunks/5bd81a671a527354.js","/_next/static/chunks/502578592318f455.js","/_next/static/chunks/6d33355d40d50697.js"],"default"]
-9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
-a:"$Sreact.suspense"
-3:Taec,
+a:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/d2be314c3ece3fbe.js"],"OutletBoundary"]
+b:"$Sreact.suspense"
+3:T10d5,
+Todo mundo sabe que está usando IA para programar. Pouquíssima gente consegue explicar *como* essa IA influenciou o resultado final.
+
+Esse gap me incomoda como professor de programação e como pesquisador em formação. E foi esse incômodo que me levou a construir algo para tentar resolvê-lo.
+
+---
+
+## O problema que ninguém estava nomeando
+
+Quando avalio um trabalho de aluno hoje, me deparo com uma pergunta cada vez mais difícil de responder: **o que, aqui, é genuinamente do aluno?**
+
+Não estou fazendo um julgamento moral sobre o uso de IA, pelo contrário. O problema é que, sem visibilidade nenhuma sobre o processo, fica impossível dar um feedback útil, identificar onde o estudante ainda precisa crescer ou reconhecer quando ele teve uma sacada realmente criativa.
+
+O mesmo vale para o meu próprio trabalho de pesquisa. Quando revisito decisões de arquitetura da minha tese, quero conseguir rastrear: *essa escolha veio de uma sugestão do Copilot? Eu adaptei, ou segui cegamente?* Hoje, sem nenhum registro, essa memória simplesmente se perde.
+
+> A IA virou um "atalho invisível" — presente em quase todo projeto, mas ausente de qualquer documentação.
+
+---
+
+## A solução: tornar o processo visível
+
+Para atacar esse problema, desenvolvi uma **extensão para o VS Code** que registra as interações com as principais ferramentas de IA usadas no desenvolvimento:
+
+- **GitHub Copilot**
+- **Claude**
+- **Codex**
+
+A extensão captura prompts e respostas e os salva em arquivos de log estruturados — projetados para serem **commitados junto com o código** no repositório do projeto.
+
+---
+
+## Por que commitar os logs faz toda a diferença
+
+Guardar os logs localmente seria apenas metade do caminho. Ao salvá-los no repositório, duas coisas mudam fundamentalmente:
+
+### Para a educação
+
+O histórico de interações com a IA passa a ser um **critério avaliativo legítimo**. É possível analisar a jornada de aprendizado de um aluno: ele fez perguntas mais precisas ao longo do tempo? Soube questionar as sugestões da ferramenta? Usou a IA como andaime ou como muleta?
+
+### Para a pesquisa
+
+Cria-se um **registro auditável** de como sugestões sintéticas influenciaram decisões de design. Isso tem valor tanto para a integridade do processo quanto para a análise posterior — inclusive para outros pesquisadores que queiram replicar ou criticar o trabalho.
+
+---
+
+## O que um log se parece na prática
+
+```
+[
+  {
+    "timestamp": "2025-04-12T10:32:00.000Z",
+    "source": "claude",
+    "git_branch": "main",
+    "git_user_name": "Jane Doe",
+    "call_context": {
+      "cwd": "/Users/jane/projects/my-app"
+    },
+    "role": "user",
+    "content": "refactor the auth module to use JWT"
+  },
+  {
+    "timestamp": "2025-04-12T10:32:05.000Z",
+    "source": "claude",
+    "git_branch": "main",
+    "git_user_name": "Jane Doe",
+    "call_context": {
+      "cwd": "/Users/jane/projects/my-app"
+    },
+    "role": "assistant",
+    "content": "Here's the refactored auth module using JWT..."
+  }
+]
+```
+
+Simples, legível, versionável. O suficiente para contar uma história.
+
+---
+
+## O que isso muda, conceitualmente
+
+A ideia central não é vigiar ninguém. É reconhecer que **o processo de desenvolvimento com IA é parte do produto intelectual** — e merece ser tratado como tal.
+
+Da mesma forma que citamos referências em um artigo ou documentamos decisões de arquitetura em um ADR, faz sentido documentar como chegamos a certas soluções em colaboração com sistemas sintéticos.
+
+Isso vale especialmente em contextos onde a autoria e o raciocínio importam: salas de aula, dissertações, projetos de código aberto, auditorias de software.
+
+---
+
+## Próximos passos
+
+A extensão está funcional e disponível publicamente. Ainda há muito espaço para evoluir - análise automática dos logs, dashboards de padrões de uso, integração com ambientes de avaliação.
+
+Mas o núcleo já está lá: **transformar a IA de caixa-preta em parte documentada e analisável do processo criativo**.
+
+Se você é professor, pesquisador, ou simplesmente alguém que quer entender melhor como está usando IA no seu trabalho, vale dar uma olhada.
+
+**[Acesse a extensão no VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=schardosim.cognitrace)**
+4:Taec,
 O desenvolvimento de software mudou. O que antes exigia dias de configuração de boilerplate e ajustes manuais, agora pode ser condensado em poucas horas de fluxo criativo. Recentemente, decidi refazer meu site pessoal do zero e o resultado foi surpreendente: uma manhã de trabalho foi o suficiente.
 
 ## O Plano
@@ -33,7 +130,7 @@ Trabalhar com IA em um projeto real traz aprendizados que vão além do "prompt 
 ## Conclusão
 Refazer um site em poucas horas não é sobre "atalhos", mas sobre alavancagem. Ao delegar a conversão bruta de dados e a escrita de código repetitivo, pude focar no que realmente importa: a arquitetura da minha presença digit
 
-A barreira entre a ideia e a execução nunca foi tão pequena.4:T77f,
+A barreira entre a ideia e a execução nunca foi tão pequena.5:T77f,
 Você, como grande parte da população, deve ser um usuário assíduo das ferramentas de IA Generativa, como o [ChatGPT](https://chat.openai.com/). Mas você já pensou em ter seu próprio assistente baseado nessa tecnologia?
 
 Com o Assistants da OpenAI você pode criar assistentes personalizados, que agem de acordo com as suas instruções, buscam respostas em documentos que você pode prover e até podem ser integrados a outras aplicações e APIs.
@@ -66,7 +163,7 @@ O próximo passo é usar a API da OpenAI para utilizar esse assistente a partir 
 
 Até mais,
 
-Zé5:T783,
+Zé6:T783,
 Utilizar conteúdo multimídia em suas aulas pode enriquecer a experiência de aprendizagem, tornando-a mais interativa e interessante. Aqui estão 5 ferramentas de autoria gratuitas que os você pode usar para criar diversos tipos de conteúdo para suas aulas:
 
 ### Genially
@@ -104,7 +201,7 @@ Você já conhecia essas ferramentas?
 
 Até mais,
 
-Zé6:T76e,
+Zé7:T76e,
 É com grande entusiasmo que inauguro este espaço. Meu nome é José Pedro, um engenheiro de software apaixonado e pesquisador incansável, sempre em busca de novos horizontes no campo da tecnologia. Neste blog compartilharei minhas descobertas, projetos e, claro, um pouco de código.
 
 **Minha Jornada**
@@ -127,7 +224,7 @@ Então, se você está pronto para embarcar nesta aventura comigo, fique à vont
 
 Até mais,
 
-Zé0:{"buildId":"Fcm_8Tw8w44X5HMx1SZ1m","rsc":["$","$1","c",{"children":[["$","$L2",null,{"articles":[{"slug":"2026-03-01-desenvolvimento-com-ia","meta":{"title":"Como refiz meu site pessoal em uma manhã usando IA","date":"2026-03-01","readTime":"6 min","tag":"Inteligência Artificial","coverImage":"/images/blog/stitch.png","description":"Por que e como usar IA no desenvolvimento de software para que a IA não use você.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$3"},{"slug":"2024-03-22-open-ai-assistant","meta":{"title":"Crie um assistente baseado em IA Generativa","date":"2024-03-22","readTime":"6 min","tag":"Inteligência Artificial","coverImage":"/images/blog/open-ai-assistant.jpeg","description":"Passo a passo para criar e testar um assistente com IA generativa usando a plataforma da OpenAI.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$4"},{"slug":"2024-03-15-5-ferramentas-de-autoria","meta":{"title":"5 ferramentas de autoria gratuitas para você criar conteúdo multimídia","date":"2024-03-15","readTime":"4 min","tag":"Educação","coverImage":"/images/blog/5-ferramentas-de-autoria.jpeg","description":"5 ferramentas gratuitas para criar conteúdos multimídia e deixar as aulas mais interativas.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$5"},{"slug":"2024-03-10-hello-world","meta":{"title":"Hello World!","date":"2024-03-10","readTime":"1 min","tag":"Geral","coverImage":"/images/blog/react_header.webp","description":"Um convite para compartilhar com você minha jornada no mundo da tecnologia.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$6"}],"locale":"pt","translations":{"title":"Blog","description":"Artigos e reflexões sobre tecnologia, engenharia de software e desenvolvimento com IA"}}],["$L7"],"$L8"]}],"loading":null,"isPartial":false}
-7:["$","script","script-0",{"src":"/_next/static/chunks/6d33355d40d50697.js","async":true}]
-8:["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]
-b:null
+Zé0:{"buildId":"CibMyF8Xgyz_uZiK9v5aV","rsc":["$","$1","c",{"children":[["$","$L2",null,{"articles":[{"slug":"2026-05-02-documentar-ia","meta":{"title":"Como documentar o uso de IA no seu projeto (e por que isso importa)","date":"2026-05-02","readTime":"6 min","tag":"Inteligência Artificial","coverImage":"/images/blog/cognitrace.jpeg","description":"Registre, versione e analise como a IA influencia decisões de código.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$3"},{"slug":"2026-03-01-desenvolvimento-com-ia","meta":{"title":"Como refiz meu site pessoal em uma manhã usando IA","date":"2026-03-01","readTime":"6 min","tag":"Inteligência Artificial","coverImage":"/images/blog/stitch.png","description":"Por que e como usar IA no desenvolvimento de software para que a IA não use você.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$4"},{"slug":"2024-03-22-open-ai-assistant","meta":{"title":"Crie um assistente baseado em IA Generativa","date":"2024-03-22","readTime":"6 min","tag":"Inteligência Artificial","coverImage":"/images/blog/open-ai-assistant.jpeg","description":"Passo a passo para criar e testar um assistente com IA generativa usando a plataforma da OpenAI.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$5"},{"slug":"2024-03-15-5-ferramentas-de-autoria","meta":{"title":"5 ferramentas de autoria gratuitas para você criar conteúdo multimídia","date":"2024-03-15","readTime":"4 min","tag":"Educação","coverImage":"/images/blog/5-ferramentas-de-autoria.jpeg","description":"5 ferramentas gratuitas para criar conteúdos multimídia e deixar as aulas mais interativas.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$6"},{"slug":"2024-03-10-hello-world","meta":{"title":"Hello World!","date":"2024-03-10","readTime":"1 min","tag":"Geral","coverImage":"/images/blog/react_header.webp","description":"Um convite para compartilhar com você minha jornada no mundo da tecnologia.","author":"José Pedro Schardosim Simão","language":"pt"},"content":"$7"}],"locale":"pt","translations":{"title":"Blog","description":"Artigos e reflexões sobre tecnologia, engenharia de software e desenvolvimento com IA"}}],["$L8"],"$L9"]}],"loading":null,"isPartial":false}
+8:["$","script","script-0",{"src":"/_next/static/chunks/6d33355d40d50697.js","async":true}]
+9:["$","$La",null,{"children":["$","$b",null,{"name":"Next.MetadataOutlet","children":"$@c"}]}]
+c:null
